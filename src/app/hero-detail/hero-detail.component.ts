@@ -7,8 +7,9 @@ import { Hero } from '../hero';
   styleUrls: ['./hero-detail.component.css']
 })
 export class HeroDetailComponent implements OnInit {
+  // get input from parent component which is heroes
+  // pass in input by given hero =>  [hero]="selectedHero"
   @Input() hero: Hero;
-  hello;
   constructor() { }
 
   ngOnInit() {
